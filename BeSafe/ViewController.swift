@@ -25,8 +25,8 @@ class ViewController: UIViewController,MapViewDelegate  {
     override func viewDidLoad() {
         super.viewDidLoad()
       
-        WebService.sharedInstance.sendData(json: nil, method: "POST", url: baseUrl as NSURL, success: { (json) in
-            print(json)
+        WebService.sharedInstance.sendData(json: nil, method: "GET", url: baseUrl as NSURL, success: { (json) in
+            print("here",json)
              //Show ActivityController
             ABActivity.showActivityIndicator(self.view, text: "")
         

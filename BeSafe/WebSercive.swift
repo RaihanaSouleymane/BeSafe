@@ -13,13 +13,9 @@ class WebService: NSObject, URLSessionDelegate, URLSessionDataDelegate, URLSessi
     static let sharedInstance = WebService()
     var crimeArray = [Crime]()
     
-    let baseURL:NSURL = NSURL(string: "http://54.191.35.66:8181/pfchang/api/buy?username=Michael&grandTotal=0")!
     //set the Base URL with the required filter.
-    //
+    let baseURL : NSURL = NSURL(string: "https://data.sfgov.org/resource/ritf-b9ki.json?$where=%20date='2015-12-01T00:00:00'%20and%20date%3C'2016-01-01T00:00:00'")!
     
-  //  let baseURL : NSURL = NSURL(string: "https://data.sfgov.org/resource/ritf-b9ki.json?$where=%20date='2015-12-01T00:00:00'%20and%20date%3C'2016-01-01T00:00:00'")!
-    
-
     // MARK: - Utility Methods for API calls
 
     func sendData(json:AnyObject?, method:String, url:NSURL, success:((_ json:AnyObject) -> Void)?, fail:((_ error: Error) -> Void)?) {
