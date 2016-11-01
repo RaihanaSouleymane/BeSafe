@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2mC-wY-aRN">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BeSafe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +18,75 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mh6-Yw-9Kl" customClass="MapView" customModule="BeSafe" customModuleProvider="target">
+                                <subviews>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bPm-KF-ESw"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qK2-o8-HHw">
+                                        <state key="normal" image="TrackUserDeselect"/>
+                                        <state key="highlighted" image="TrackUserSelected"/>
+                                        <connections>
+                                            <action selector="onTrackUserAction:" destination="mh6-Yw-9Kl" eventType="touchUpInside" id="tQK-UV-csS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="bPm-KF-ESw" secondAttribute="bottom" id="1wq-XR-qGI"/>
+                                    <constraint firstAttribute="bottom" secondItem="qK2-o8-HHw" secondAttribute="bottom" constant="10" id="8Lc-vx-OeR"/>
+                                    <constraint firstItem="bPm-KF-ESw" firstAttribute="leading" secondItem="mh6-Yw-9Kl" secondAttribute="leading" id="bRE-RH-iMa"/>
+                                    <constraint firstAttribute="trailing" secondItem="qK2-o8-HHw" secondAttribute="trailing" constant="10" id="kRa-Ez-7gC"/>
+                                    <constraint firstItem="bPm-KF-ESw" firstAttribute="top" secondItem="mh6-Yw-9Kl" secondAttribute="top" id="kkv-Os-Alt"/>
+                                    <constraint firstAttribute="trailing" secondItem="bPm-KF-ESw" secondAttribute="trailing" id="tLx-RY-tvS"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="mkMapView" destination="bPm-KF-ESw" id="w9W-3Z-P7A"/>
+                                    <outlet property="trackUserBtn" destination="qK2-o8-HHw" id="7qZ-Gi-pCM"/>
+                                </connections>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mh6-Yw-9Kl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="IiR-6m-0m4"/>
+                            <constraint firstItem="mh6-Yw-9Kl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Xte-qh-Imm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mh6-Yw-9Kl" secondAttribute="bottom" id="aad-Xb-EBC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mh6-Yw-9Kl" secondAttribute="trailing" constant="-16" id="jFB-kO-5jV"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="jsE-HU-EfY"/>
+                    <connections>
+                        <outlet property="mapView" destination="mh6-Yw-9Kl" id="bCg-3a-JvN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1056.8" y="122.78860569715144"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uTH-2I-hk4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="2mC-wY-aRN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2MY-jA-5yS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="qTS-Zk-Zsb">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="SFU-MM-BlP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Elk-58-dem" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1" y="123"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="TrackUserDeselect" width="48" height="48"/>
+        <image name="TrackUserSelected" width="41" height="42"/>
+    </resources>
 </document>

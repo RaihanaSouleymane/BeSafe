@@ -14,6 +14,17 @@
 		FA2D0C791DAB62050046BA32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2D0C771DAB62050046BA32 /* LaunchScreen.storyboard */; };
 		FA2D0C841DAB62050046BA32 /* BeSafeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D0C831DAB62050046BA32 /* BeSafeTests.swift */; };
 		FA2D0C8F1DAB62050046BA32 /* BeSafeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D0C8E1DAB62050046BA32 /* BeSafeUITests.swift */; };
+		FA2D0CD81DAB9A670046BA32 /* Crime.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D0CD71DAB9A670046BA32 /* Crime.swift */; };
+		FA2D0CDA1DABA2250046BA32 /* WebSercive.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D0CD91DABA2250046BA32 /* WebSercive.swift */; };
+		FA2D0CDC1DAC16690046BA32 /* ABActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D0CDB1DAC16680046BA32 /* ABActivity.swift */; };
+		FA2D0CE71DAD594D0046BA32 /* FBAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D0CE01DAD594D0046BA32 /* FBAnnotation.swift */; };
+		FA2D0CE81DAD594D0046BA32 /* FBAnnotationCluster.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D0CE11DAD594D0046BA32 /* FBAnnotationCluster.swift */; };
+		FA2D0CE91DAD594D0046BA32 /* FBAnnotationClusterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D0CE21DAD594D0046BA32 /* FBAnnotationClusterView.swift */; };
+		FA2D0CEA1DAD594D0046BA32 /* FBBoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D0CE31DAD594D0046BA32 /* FBBoundingBox.swift */; };
+		FA2D0CEB1DAD594D0046BA32 /* FBClusteringManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D0CE41DAD594D0046BA32 /* FBClusteringManager.swift */; };
+		FA2D0CEC1DAD594D0046BA32 /* FBQuadTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D0CE51DAD594D0046BA32 /* FBQuadTree.swift */; };
+		FA2D0CED1DAD594D0046BA32 /* FBQuadTreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D0CE61DAD594D0046BA32 /* FBQuadTreeNode.swift */; };
+		FA2D0CF11DAD5A9C0046BA32 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D0CF01DAD5A9C0046BA32 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +58,18 @@
 		FA2D0C8A1DAB62050046BA32 /* BeSafeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeSafeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2D0C8E1DAB62050046BA32 /* BeSafeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeSafeUITests.swift; sourceTree = "<group>"; };
 		FA2D0C901DAB62050046BA32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA2D0CC61DAB6DDE0046BA32 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FA2D0CD71DAB9A670046BA32 /* Crime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crime.swift; sourceTree = "<group>"; };
+		FA2D0CD91DABA2250046BA32 /* WebSercive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSercive.swift; sourceTree = "<group>"; };
+		FA2D0CDB1DAC16680046BA32 /* ABActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABActivity.swift; sourceTree = "<group>"; };
+		FA2D0CE01DAD594D0046BA32 /* FBAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBAnnotation.swift; sourceTree = "<group>"; };
+		FA2D0CE11DAD594D0046BA32 /* FBAnnotationCluster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBAnnotationCluster.swift; sourceTree = "<group>"; };
+		FA2D0CE21DAD594D0046BA32 /* FBAnnotationClusterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBAnnotationClusterView.swift; sourceTree = "<group>"; };
+		FA2D0CE31DAD594D0046BA32 /* FBBoundingBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBBoundingBox.swift; sourceTree = "<group>"; };
+		FA2D0CE41DAD594D0046BA32 /* FBClusteringManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBClusteringManager.swift; sourceTree = "<group>"; };
+		FA2D0CE51DAD594D0046BA32 /* FBQuadTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBQuadTree.swift; sourceTree = "<group>"; };
+		FA2D0CE61DAD594D0046BA32 /* FBQuadTreeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBQuadTreeNode.swift; sourceTree = "<group>"; };
+		FA2D0CF01DAD5A9C0046BA32 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +104,7 @@
 				FA2D0C821DAB62050046BA32 /* BeSafeTests */,
 				FA2D0C8D1DAB62050046BA32 /* BeSafeUITests */,
 				FA2D0C6C1DAB62050046BA32 /* Products */,
+				FA2D0CC51DAB6DDE0046BA32 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +121,17 @@
 		FA2D0C6D1DAB62050046BA32 /* BeSafe */ = {
 			isa = PBXGroup;
 			children = (
+				FA2D0CB51DAB68610046BA32 /* Supporting Files */,
+				FA2D0CB41DAB68280046BA32 /* Models */,
+				FA2D0CB31DAB67F00046BA32 /* ApiCall */,
+				FA2D0CB21DAB67D30046BA32 /* Storyboards */,
+				FA2D0CB11DAB67C50046BA32 /* Controlers */,
+				FA2D0CA61DAB67AE0046BA32 /* Utilities */,
 				FA2D0C6E1DAB62050046BA32 /* AppDelegate.swift */,
-				FA2D0C701DAB62050046BA32 /* ViewController.swift */,
-				FA2D0C721DAB62050046BA32 /* Main.storyboard */,
+				FA2D0CDB1DAC16680046BA32 /* ABActivity.swift */,
 				FA2D0C751DAB62050046BA32 /* Assets.xcassets */,
-				FA2D0C771DAB62050046BA32 /* LaunchScreen.storyboard */,
 				FA2D0C7A1DAB62050046BA32 /* Info.plist */,
+				FA2D0CF01DAD5A9C0046BA32 /* MapView.swift */,
 			);
 			path = BeSafe;
 			sourceTree = "<group>";
@@ -123,6 +152,77 @@
 				FA2D0C901DAB62050046BA32 /* Info.plist */,
 			);
 			path = BeSafeUITests;
+			sourceTree = "<group>";
+		};
+		FA2D0CA61DAB67AE0046BA32 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utilities;
+			path = /Users/macbook/Documents/iOS_Projects/MyHomey/iosapp/CommonWork/Models/../Utilities;
+			sourceTree = "<absolute>";
+		};
+		FA2D0CB11DAB67C50046BA32 /* Controlers */ = {
+			isa = PBXGroup;
+			children = (
+				FA2D0C701DAB62050046BA32 /* ViewController.swift */,
+			);
+			name = Controlers;
+			sourceTree = "<group>";
+		};
+		FA2D0CB21DAB67D30046BA32 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FA2D0C721DAB62050046BA32 /* Main.storyboard */,
+				FA2D0C771DAB62050046BA32 /* LaunchScreen.storyboard */,
+				FA2D0CDF1DAD594D0046BA32 /* FBAnnotationClustering */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		FA2D0CB31DAB67F00046BA32 /* ApiCall */ = {
+			isa = PBXGroup;
+			children = (
+				FA2D0CD91DABA2250046BA32 /* WebSercive.swift */,
+			);
+			name = ApiCall;
+			sourceTree = "<group>";
+		};
+		FA2D0CB41DAB68280046BA32 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA2D0CD71DAB9A670046BA32 /* Crime.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FA2D0CB51DAB68610046BA32 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA2D0CC51DAB6DDE0046BA32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA2D0CC61DAB6DDE0046BA32 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA2D0CDF1DAD594D0046BA32 /* FBAnnotationClustering */ = {
+			isa = PBXGroup;
+			children = (
+				FA2D0CE01DAD594D0046BA32 /* FBAnnotation.swift */,
+				FA2D0CE11DAD594D0046BA32 /* FBAnnotationCluster.swift */,
+				FA2D0CE21DAD594D0046BA32 /* FBAnnotationClusterView.swift */,
+				FA2D0CE31DAD594D0046BA32 /* FBBoundingBox.swift */,
+				FA2D0CE41DAD594D0046BA32 /* FBClusteringManager.swift */,
+				FA2D0CE51DAD594D0046BA32 /* FBQuadTree.swift */,
+				FA2D0CE61DAD594D0046BA32 /* FBQuadTreeNode.swift */,
+			);
+			path = FBAnnotationClustering;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +362,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA2D0CED1DAD594D0046BA32 /* FBQuadTreeNode.swift in Sources */,
+				FA2D0CE71DAD594D0046BA32 /* FBAnnotation.swift in Sources */,
+				FA2D0CDA1DABA2250046BA32 /* WebSercive.swift in Sources */,
 				FA2D0C711DAB62050046BA32 /* ViewController.swift in Sources */,
+				FA2D0CF11DAD5A9C0046BA32 /* MapView.swift in Sources */,
+				FA2D0CE91DAD594D0046BA32 /* FBAnnotationClusterView.swift in Sources */,
+				FA2D0CEA1DAD594D0046BA32 /* FBBoundingBox.swift in Sources */,
+				FA2D0CE81DAD594D0046BA32 /* FBAnnotationCluster.swift in Sources */,
 				FA2D0C6F1DAB62050046BA32 /* AppDelegate.swift in Sources */,
+				FA2D0CD81DAB9A670046BA32 /* Crime.swift in Sources */,
+				FA2D0CEC1DAD594D0046BA32 /* FBQuadTree.swift in Sources */,
+				FA2D0CDC1DAC16690046BA32 /* ABActivity.swift in Sources */,
+				FA2D0CEB1DAD594D0046BA32 /* FBClusteringManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +625,7 @@
 				FA2D0C951DAB62050046BA32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA2D0C961DAB62050046BA32 /* Build configuration list for PBXNativeTarget "BeSafeTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +634,7 @@
 				FA2D0C981DAB62050046BA32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA2D0C991DAB62050046BA32 /* Build configuration list for PBXNativeTarget "BeSafeUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +643,7 @@
 				FA2D0C9B1DAB62050046BA32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
